@@ -19,7 +19,7 @@ public class SqareSpawner : MonoBehaviour
        
         if (Input.GetMouseButton(0))
         {
-            Debug.DrawLine(Vector2.zero, new Vector2 (5,7), Color.blue );
+            return Debug.DrawLine(Vector2.zero, new Vector2 (5,7), Color.blue );
         }
     }
 }
