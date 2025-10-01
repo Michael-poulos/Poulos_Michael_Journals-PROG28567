@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     {
 
         // draw a 5-unit white line from the origin for 2.5 seconds
-        Debug.DrawLine(Vector3.zero, new Vector3(5, 0, 0), Color.red);
+        Debug.DrawLine(transform.position, transform.position + new Vector3(5, 0, 0), Color.red);
 
 
         // public void EnemyRadar(float radius, int circlePoints 
