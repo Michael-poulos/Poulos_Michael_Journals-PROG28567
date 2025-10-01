@@ -9,12 +9,20 @@ public class Moon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
 
+
+    //public void OrbitalMotion(float radius, float speed, Transform target)
+    //{
+
+    //}
+        Vector3 pos = transform.position;
+        pos.x += 1;
+        transform.position = pos; 
     }
 }
