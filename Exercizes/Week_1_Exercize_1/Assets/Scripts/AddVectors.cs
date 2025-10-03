@@ -10,21 +10,21 @@ public class AddVectors : MonoBehaviour
         // Exercise: Visualizing Vector Addition
         // Create a new Vector2 called "rPlusB" which adds rTransform's position to bTransform's position.​
 
-        Vector2 rTransform = new Vector2(0, 1);
-        Vector2 bTransform = new Vector2(1, 7);
+        Vector2 rTransform = redTransform.position;
+        Vector2 bTransform = blueTransform.position;
         Vector2 rPlusB = rTransform + bTransform;
 
-        if (Input.GetKeyDown("B"))
+        if (Input.GetKey("b") && !Input.GetKey("r"))
         {
             Debug.DrawLine(transform.position, bTransform, Color.blue);
         }
-        if (Input.GetKeyDown("R"))
+        if (Input.GetKey("r") && !Input.GetKey("b"))
         {
-            Debug.DrawLine(transform.position, bTransform, Color.red);
+            Debug.DrawLine(transform.position, rTransform, Color.red);
         }
-        if (Input.GetKeyDown("R+B"))
+       if (Input.GetKey("b") && Input.GetKey("r"))
         {
-            Debug.DrawLine(transform.position, bTransform, Color.magenta);
+            Debug.DrawLine(transform.position, rPlusB, Color.magenta);
         }
 
 
