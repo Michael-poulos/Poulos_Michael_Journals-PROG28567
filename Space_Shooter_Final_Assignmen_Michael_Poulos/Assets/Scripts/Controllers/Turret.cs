@@ -16,7 +16,7 @@ public class Turret : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    // This code is copied from lecture see it's functionality. It is not intended to be viewed as my own work aside from the minor adjustments I made as described in my joural
     void Update()
     {
         Vector3 target = ObjectiveEnd.position;
