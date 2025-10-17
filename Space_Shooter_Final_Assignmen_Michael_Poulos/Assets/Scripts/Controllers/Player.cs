@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public GameObject bombPrefab;
     public List<Transform> asteroidTransforms;
     public Transform bombTransform;
+    public Transform Objective;
+    public Transform Player; 
 
     public float accelerationTime, decelerationTime;
     public float maxSpeed;
@@ -25,6 +27,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+        Vector2 distanceBetween = Objective.position - Player.position;
+
+        Debug.DrawLine(Objective.position, Player.position, Color.red);
 
         Vector2 playerInput = Vector2.zero;
         if (Input.GetKey(KeyCode.UpArrow))
