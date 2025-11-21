@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-    void Update()
+    void FixedUpdate()
     {
         // The input from the player needs to be determined and
         // then passed in the to the MovementUpdate which should
